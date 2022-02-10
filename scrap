@@ -1,0 +1,11 @@
+#!/bin/bash
+mkdir $1
+for i in {1..172}
+do
+   copie=$(curl "https://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/html/full/flat/css3-modsel-"$i".html")
+   page="page"$i".html"
+   echo $copie > ./$1/$page
+   sleep 2
+   
+done
+
