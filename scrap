@@ -1,4 +1,8 @@
 #!/bin/bash
+
+
+# pour l'utiliser on fait ./scrap [nom du fichier que l'on veut creer]
+# pour cet exemple veuiller mettre comme nom [tmp]
 mkdir $1
 for i in {1..172}
 do
