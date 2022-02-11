@@ -11,7 +11,7 @@ for FILE in ./$1/*.html;
 do 
 	cmd=$(python3 css.py $FILE $1)
 	nameFile=$(basename $FILE)
-	page=$nameFile".css"
+	page=$nameFile".scss"
 	echo $cmd > ./cssHTML/$page
 	
 done
