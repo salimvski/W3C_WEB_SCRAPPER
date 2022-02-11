@@ -12,7 +12,6 @@ do
 	error="Error"
 	# if result contains Error message we create page and put error within
 	if [[ "$result" == *"$error"* ]]; then
-		echo "error"
 		echo $result > ./validyCSS/$page
 	fi
 	
