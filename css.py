@@ -6,7 +6,8 @@ import subprocess
 from bs4 import BeautifulSoup
 
 # assign directory
-directory = 'tmp'
+# we get arg from command line when executing ./css.sh [filename]
+directory = sys.argv[2]
 
 
 
@@ -27,15 +28,10 @@ def css():
 		# read all lines at once
 		all_of_it = file.read()
 		soup = BeautifulSoup(all_of_it, 'html.parser')
-		css = soup.pre
-		if css is not None:
-			value = css.string
-			file.close()
-			return value
-		else:
-			file.close()
-			return None
-		# close the file
+		css = soup.pre.string
+		file.close()
+		return css
+		
 
 if __name__ == "__main__" :
         print(css())

@@ -3,13 +3,19 @@
 
 # pour l'utiliser on fait ./scrap [nom du fichier que l'on veut creer]
 # pour cet exemple veuiller mettre comme nom [tmp]
-mkdir $1
-for i in {1..172}
-do
-   copie=$(curl "https://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/html/full/flat/css3-modsel-"$i".html")
-   page="page"$i".html"
-   echo $copie > ./$1/$page
-   sleep 2
+#mkdir $1
+#for i in {1..172}
+#do
+#   wget -r https://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/html/full/flat/
+#   copie=$(curl "https://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/html/full/flat/css3-modsel-"$i".html")
+#   page="page"$i".html"
+#   echo $copie > ./$1/$page
+#   sleep 2
    
-done
+#done
 
+mkdir $1
+# -w 2 pour 2 seconds de pause 
+wget -r --no-parent --reject "index.html*" https://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/html/full/flat/
+mv www.w3.org/Style/CSS/Test/CSS3/Selectors/current/html/full/flat/* $1
+rm -rf www.w3.org
