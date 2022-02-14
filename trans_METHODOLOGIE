@@ -1,0 +1,17 @@
+
+
+1) executer code trans , en argument le dossier des test HTML valide W3c
+2)
+
+cree un template HTML de l'exemple present dans le pdf
+
+3)
+
+le programme trans va boucler sur toutes les pages HTML 
+pour chaque fichier HTML:
+ a) inserer le code css correspondant dans le bloc CSS
+ b) inserer le code HTML correspondant dans le bloc HTML
+ c) inserer le rendu du text dans le bloc solution, avec un boutton bootstrap rouge qui rend "onclick" le css actif
+
+ PAS DE JAVASCRIPT
+ d) ajouter fonction previous/next page
