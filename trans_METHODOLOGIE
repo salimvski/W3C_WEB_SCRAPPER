@@ -9,9 +9,14 @@ cree un template HTML de l'exemple present dans le pdf
 
 le programme trans va boucler sur toutes les pages HTML 
 pour chaque fichier HTML:
- a) inserer le code css correspondant dans le bloc CSS
- b) inserer le code HTML correspondant dans le bloc HTML
- c) inserer le rendu du text dans le bloc solution, avec un boutton bootstrap rouge qui rend "onclick" le css actif
+
+pour chaque fichier HTML on scrap le contenu HTML / CSS grace a un script python utilisant beautifulsoup
+on injecte le contenu dans la page template / le script appellant le script python va generer le nom du fichier et ecrire le contenu dedans
+
+ a) inserer le code css correspondant dans le bloc CSS du template
+
+ b) inserer le code HTML correspondant dans le bloc HTML du template
+ c) inserer le rendu du text dans le bloc solution, avec un boutton bootstrap rouge qui rend "onclick" le css actif du template
 
  PAS DE JAVASCRIPT
  d) ajouter fonction previous/next page
