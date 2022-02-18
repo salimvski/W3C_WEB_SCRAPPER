@@ -1,4 +1,6 @@
 
+# program qui prend le fichier genere par scrap en argument et genere beautified 
+# utilisation : ./transh [filename]
 
 rm -rf beautified
 mkdir beautified
