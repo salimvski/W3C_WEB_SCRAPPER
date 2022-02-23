@@ -1,13 +1,10 @@
-# projet1-IFT-3225
-projet 1
 
 
-How to use, keep same file name
+example of usage :
 
-#1 run ./scrap [filename]
-#2 run ./css.sh [filename]
-# css code is in cssHTML, and html code is in [filename]
+# ./scrap myfolder
 
-#3 run ./sass.sh [cssHTML], validyCSS contains errors
+# cd beautify -> ./run.sh ../myfolder final
 
-#4 run ./trans.sh [filename] result will be in beautified.html
+# result will be storer in final, dynamic pages with css result on Solution button click.
+
